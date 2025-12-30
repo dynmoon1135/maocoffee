@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warkop Nusantara</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">MAOCOFFEE</div>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#" class="btn-home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <h1>Mao Coffee??<br>Ah, masa nggak tahu kopi</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="featured">
+        <div class="container featured-grid">
+            <div class="feat-card">
+                <div class="circle-box"><img src="asset/kopihitam.webp" alt="Kopi Tubruk"></div>
+                <h3>Kopi Hitam</h3>
+                <p>- Citarasa Lansia </p>
+            </div>
+            <div class="feat-card">
+                <div class="circle-box"><img src="asset/gulaaren.webp" alt="Es Kopi Susu"></div>
+                <h3>Es Kopi Gula Aren</h3>
+                <p>- Manis Yang Alami</p>
+            </div>
+            <div class="feat-card">
+                <div class="circle-box"><img src="asset/latte.webp" alt="Pisang Goreng"></div>
+                <h3>Kopi Latte</h3>
+                <p>- Menjaga Keseimbangan </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="signatures">
+        <div class="container">
+            <h2 class="title-serif">Ciri Khas Warkop Kami</h2>
+            <div class="sig-flex">
+                <div class="sig-img-wrapper">
+                    <img src="asset/mokapot.jpg" alt="Signature Coffee">
+                </div>
+                <div class="sig-content">
+                    <p>“Kami menyajikan kopi warkop dengan pendekatan café.
+                    Menggunakan 100% biji kopi asli dari petani lokal, digiling manual,
+                    dan diseduh dengan teknik mokapot untuk menjaga karakter rasa.
+                    Setiap sajian, termasuk latte, diracik secara manual tanpa mesin—jujur,
+                    autentik, dan konsisten.”
+                </p>
+                    <br>
+                    <h3>Gallery</h3>
+                    <div class="pop-grid">
+                        <div class="pop-item"><img src="asset/kopi.webp" alt="Coffee"><span>Kopi Racik</span></div>
+                        <div class="pop-item"><img src="asset/mie.jpeg" alt="Food"><span>Makanan</span></div>
+                        <div class="pop-item"><img src="asset/suasana.jpg" alt="Bundles"><span>Suasana</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="title-serif center">Daftar Menu</h2>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" onclick="openMenu(event, 'kopi')">☕ Kopi Racik</button>
+                <button class="tab-btn" onclick="openMenu(event, 'shake')">🧋 Non Kopi</button>
+                <button class="tab-btn" onclick="openMenu(event, 'saset')">☕ Saset Kapal Api</button>
+                <button class="tab-btn" onclick="openMenu(event, 'makan')">🍛 Makanan</button>
+            </div>
+
+            <div id="kopi" class="tab-content active">
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <img src="asset/kopihitam.webp" class="m-img">
+                        <div class="m-info"><h4>Kopi Hitam</h4><p>Kopi hitam murni dengan rasa bold dan aroma kuat.</p></div>
+                        <div class="m-price">Rp10k</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="asset/icekopihitam.jpg" class="m-img">
+                        <div class="m-info"><h4>Es Kopi Hitam</h4><p>Kopi hitam dingin, segar, tetap bold dan ringan diminum.</p></div>
+                        <div class="m-price">Rp11k</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="asset/latte.webp" class="m-img">
+                        <div class="m-info"><h4>Kopi Latte</h4><p>Espresso dengan susu UHT creamy dan seimbang.</p></div>
+                        <div class="m-price">Rp12k</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="asset/icelatte.jpg" class="m-img">
+                        <div class="m-info"><h4>Es Kopi Latte</h4><p>Espresso dingin dengan susu UHT creamy, segar dan smooth.</p></div>
+                        <div class="m-price">Rp13k</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="asset/gulaaren.webp" class="m-img">
+                        <div class="m-info"><h4>Es Kopi Gula Aren</h4><p>Espresso dengan gula aren cair, manis legit dan harum.</p></div>
+                        <div class="m-price">Rp15k</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shake" class="tab-content">
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <img src="asset/co.webp" class="m-img">
+                        <div class="m-info"><h4>Chocolate Milksahke</h4><p>Coklat pekat, creamy, dan rich.</p></div>
+                        <div class="m-price">Rp15k</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="asset/mc.jpg" class="m-img">
+                        <div class="m-info"><h4>Matcha Milksahke</h4><p>Matcha lembut dengan rasa teh hijau khas.</p></div>
+                        <div class="m-price">Rp15k</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="asset/st.jpg" class="m-img">
+                        <div class="m-info"><h4>Strawberry Milksake</h4><p>Segar, manis-asam strawberry.</p></div>
+                        <div class="m-price">Rp15k</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="asset/va.webp" class="m-img">
+                        <div class="m-info"><h4>Vanilla Milksahke</h4><p>Vanilla creamy klasik.</p></div>
+                        <div class="m-price">Rp15k</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="asset/ta.webp" class="m-img">
+                        <div class="m-info"><h4>Taro Milksahke</h4><p>Manis lembut dengan aroma khas taro.</p></div>
+                        <div class="m-price">Rp15k</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="saset" class="tab-content">
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <img src="asset/kapal.jpg" class="m-img">
+                        <div class="m-info"><h4>Saset Reguler</h4><p>Kapal Api, Liong, Indocafe.</p></div>
+                        <div class="m-price">Rp4k</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="asset/goday.jpg" class="m-img">
+                        <div class="m-info"><h4>Saset Premium</h4><p>Good Day, Cappuccino, Teh tarik.</p></div>
+                        <div class="m-price">Rp5k</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="makan" class="tab-content">
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <img src="asset/chou.jpg" class="m-img">
+                        <div class="m-info"><h4>Mie Gochai</h4><p>Mie goreng pedas gurih.</p></div>
+                        <div class="m-price">Rp12k</div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="asset/tofu.jpg" class="m-img">
+                        <div class="m-info"><h4>Nasi Telur Tahu</h4><p>Tahu telur tumis + nasi.</p></div>
+                        <div class="m-price">Rp12k</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container about-flex">
+            <div class="about-text">
+                <h2 class="title-serif">Cerita Kami</h2>
+                <p>
+                Warkop ini kami buat untuk orang yang suka ngopi sambil ngobrol.
+                Kami pakai biji kopi lokal, digiling manual, lalu diseduh pelan supaya rasanya enak dan obrolannya jalan.
+                Di sini, kopi bukan soal gaya, tapi soal dinikmati.
+                </p>
+
+                <p>
+                Kalau kamu datang buat ngopi dan berbagi cerita, kamu di tempat yang tepat.
+                Kami percaya kopi paling enak diminum pelan, ditemani obrolan, tanpa perlu posting apa-apa.
+                </p>
+
+            </div>
+            <div class="about-img">
+                <img src="asset/pot.jpeg" alt="Tentang Kami">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="title-serif center">Hubungi Kami</h2>
+            <div class="contact-container">
+                <div class="contact-details">
+                    <div class="c-box">
+                        <h3>📍 Lokasi</h3>
+                        <p>Jl. Pahlwan Seribu Samping <br> Hotel Grand Zuri Serpong BSD</p>
+                    </div>
+                    <div class="c-box">
+                        <h3>⏰ Jam Buka</h3>
+                        <p>Senin - Minggu<br>08:00 - 00:00 WIB</p>
+                    </div>
+                    <div class="c-box">
+                        <h3>📞 Telepon/WA</h3>
+                        <p>+62 878 2489 1003</p>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form>
+                        <input type="text" placeholder="Nama Lengkap" required>
+                        <input type="email" placeholder="Email (Opsional)">
+                        <textarea rows="4" placeholder="Tulis pesan Anda disini..." required></textarea>
+                        <button type="submit">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>MAOCOFFEE<br><span>NUSANTARA</span></h3>
+                    <p>Menghadirkan rasa khas Indonesia, sebagai warisan untuk generasi Indonesia emas.</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Navigasi</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-links">
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Maocoffee Nusantara. Dibuat dengan ❤️ untuk Penikmat Kopi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
